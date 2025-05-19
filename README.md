@@ -1,5 +1,5 @@
 
-# ADBHUT (ADBHUT) - ADB Over Network Automation Script
+# ADB-HUT - ADB Over Network Automation Script
 
 A powerful and interactive Bash script to manage Android devices over a network using ADB (Android Debug Bridge). This tool allows users to connect to Android devices via IP, push/pull files, install APKs, run shell commands, scan subnets for ADB-enabled devices, and more — all from a terminal interface with a colored UI and logging.
 
@@ -29,21 +29,26 @@ If `adb` is not installed, the script will prompt to install it automatically us
 
 1. Clone or download the script:
    ```bash
+   
    git clone https://github.com/yourusername/adb-tool.git
    cd adb-tool
+   ```
 
-	2.	Make the script executable:
+2.	Make the script executable:
 
-chmod +x adb_tool.sh
+   ```
+   chmod +x adb_tool.sh
+```
 
 
-	3.	(Optional) Install figlet for the banner:
+	
+ 3.	(Optional) Install figlet for the banner:
 
+```
 sudo apt install figlet
+```
 
 
-
-⸻
 
 🚀 Usage
 
