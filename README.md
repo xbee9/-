@@ -1,18 +1,17 @@
 
-
 # ADBHUT (ADBHUT) - ADB Over Network Automation Script
 
 A powerful and interactive Bash script to manage Android devices over a network using ADB (Android Debug Bridge). This tool allows users to connect to Android devices via IP, push/pull files, install APKs, run shell commands, scan subnets for ADB-enabled devices, and more — all from a terminal interface with a colored UI and logging.
 
 ## 📌 Features
 
-- **Automatic ADB Installation Check**
-- **Interactive IP Connection Interface**
-- **Push/Pull Files and Install APKs**
-- **Run Custom ADB Shell Commands**
+- **Automatic ADB Installation Check
+- **Interactive IP Connection Interface
+- **Push/Pull Files and Install APKs
+- **Run Custom ADB Shell Commands
 - **Scan Subnets for ADB-Enabled Devices**
 - **Batch Mode for Multiple IPs**
-- **Logs All Device Info and Actions**
+- **Logs All Device Info and Actions
 - **Graceful Exit on Interrupt Signal (Ctrl+C)**
 
 ---
