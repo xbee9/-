@@ -128,11 +128,11 @@ Feel free to fork and modify this tool to suit your needs. Pull requests are wel
 
 ---
 
-👨‍💻 Authors 
+👨‍💻 Authors                          
 [@xbee9](https://github.com/xbee9)                                         
 [@una55](https://github.com/una55)                                  
 [@povzayd](https://github.com/povzayd)                    
 
 
 ---
-
+> Made with ♥️ 
