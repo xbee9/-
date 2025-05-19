@@ -19,7 +19,7 @@ A powerful and interactive Bash script to manage Android devices over a network 
 
 - Linux (Ubuntu/Debian tested)
 - `adb` tool (`android-tools-adb`)
-- Optional: `figlet` (for fancy banners)
+- Optional: `figlet` 
 
 If `adb` is not installed, the script will prompt to install it automatically using `apt`.
 
@@ -30,14 +30,14 @@ If `adb` is not installed, the script will prompt to install it automatically us
 1. Clone or download the script:
    ```bash
    
-   git clone https://github.com/yourusername/adb-tool.git
-   cd adb-tool
+   git clone https://github.com/xbee9/adb-hut.git
+   cd adb-hut
    ```
 
 2.	Make the script executable:
 
    ```
-   chmod +x adb_tool.sh
+   chmod +x adb-hut
 ```
 
 
@@ -55,7 +55,7 @@ sudo apt install figlet
 Run the script:
 
 ```
-./adb_tool.sh
+./adb-hut
 
 Main Menu Options:
 
@@ -129,9 +129,9 @@ Feel free to fork and modify this tool to suit your needs. Pull requests are wel
 ---
 
 👨‍💻 Authors 
-xbee9  @xbee9
-Mohammad Unass Dar  @una55
-Zayd  @povzayd
+[@xbee9](https://github.com/xbee9)                                         
+[@una55](https://github.com/una55)                                  
+[@povzayd](https://github.com/povzayd)                    
 
 
 ---
