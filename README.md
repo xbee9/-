@@ -5,15 +5,14 @@ A powerful and interactive Bash script to manage Android devices over a network 
 
 ## 📌 Features
 
-- **Automatic ADB Installation Check
-- **Interactive IP Connection Interface
-- **Push/Pull Files and Install APKs
-- **Run Custom ADB Shell Commands
-- **Scan Subnets for ADB-Enabled Devices**
-- **Batch Mode for Multiple IPs**
-- **Logs All Device Info and Actions
-- **Graceful Exit on Interrupt Signal (Ctrl+C)**
-
+- Automatic ADB Installation Check
+- Interactive IP Connection Interface
+- Push/Pull Files and Install APKs
+- Run Custom ADB Shell Commands
+- Scan Subnets for ADB-Enabled Devices
+- Batch Mode for Multiple IPs
+- Logs All Device Info and Actions
+- Graceful Exit on Interrupt Signal (Ctrl+C)
 ---
 
 ## 🧰 Prerequisites
@@ -28,7 +27,7 @@ If `adb` is not installed, the script will prompt to install it automatically us
 
 ## 📦 Installation
 
-1. **Clone or download the script**:
+1. Clone or download the script:
    ```bash
    git clone https://github.com/yourusername/adb-tool.git
    cd adb-tool
@@ -50,6 +49,7 @@ sudo apt install figlet
 
 Run the script:
 
+```
 ./adb_tool.sh
 
 Main Menu Options:
@@ -59,10 +59,11 @@ Main Menu Options:
 3) Scan subnet for ADB devices
 4) Exit
 
-
+```
 ⸻
 
 🔧 Functional Details
+```
 
 1. Connect to Device
 	•	Input the device’s IP and port.
@@ -86,10 +87,11 @@ Main Menu Options:
 
 4. Exit
 	•	Disconnects all devices and gracefully exits.
-
-⸻
+```
+---
 
 📂 Batch File Format
+```
 
 Simple text file with one IP address per line:
 
@@ -97,45 +99,35 @@ Simple text file with one IP address per line:
 192.168.1.12
 192.168.1.15
 
-
-⸻
+```
+---
 
 ⚠️ Security Warning
 
 Using ADB over network is insecure by default. It should only be used in trusted environments.
 
-⸻
+---
 
 📄 Logs
 
 All actions are logged to:
 
-adb_tool.log
+`adb_tool.log`
 
 Includes timestamps, device connections, errors, and command history.
-
-⸻
+---
 
 🤝 Contributions
 
 Feel free to fork and modify this tool to suit your needs. Pull requests are welcome!
 
-⸻
+---
 
-📜 License
-
-This script is open-source and available under the MIT License.
-
-⸻
-
-👨‍💻 Author
-
-Mohammad Unass Dar
-Computer Science Engineer & Automation Enthusiast
-
-⸻
+👨‍💻 Authors 
+xbee9  @xbee9
+Mohammad Unass Dar  @una55
+Zayd  @povzayd
 
 
 ---
 
-Let me know if you'd like a version with GitHub badges, images, or if you'd like help packaging this into a `.deb` installer or turning it into a GUI!
