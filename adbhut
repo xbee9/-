@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# === Colors ===
+#colors
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
@@ -11,7 +11,7 @@ LOGFILE="adb_tool.log"
 DEFAULT_PORT=5555
 ADB_TIMEOUT=10
 
-# === Clean exit trap ===
+#invalid exit
 trap 'echo -e "\n${YELLOW}Exiting. Disconnecting devices...${NC}"; adb disconnect; exit 0' SIGINT
 
 log() { echo "$(date '+%Y-%m-%d %H:%M:%S') $*" >> "$LOGFILE"; }
@@ -21,7 +21,7 @@ print_banner() {
     if command -v figlet &>/dev/null; then
         figlet -f slant "ADB Tool"
     else
-        echo -e "${CYAN}==== ADB Tool ====${NC}"
+        echo -e "${CYAN}==== ADBHUT ====${NC}"
     fi
     echo -e "${YELLOW}ADB over Network Automation Tool${NC}"
     echo
@@ -66,7 +66,7 @@ device_info() {
     log "Device Info [$serial]: $info"
 }
 
-# === Push/Pull/Install ===
+#Push/Pull/Install
 push_file() {
     read -ep "Local file path: " local_file
     read -ep "Remote destination (e.g., /sdcard/): " remote_path
@@ -104,7 +104,7 @@ run_custom_command() {
     log "Ran custom command: $cmd"
 }
 
-# === Batch Mode ===
+#Batch Mode
 batch_mode() {
     local file="$1"
     local port="$DEFAULT_PORT"
@@ -148,7 +148,7 @@ batch_mode() {
     echo -e "${GREEN}Batch processing complete.${NC}"
 }
 
-# === Subnet Scanner ===
+# Subnet Scanner
 scan_subnet() {
     read -ep "Enter subnet (e.g., 192.168.1): " subnet
     echo -e "${YELLOW}Scanning $subnet.0/24 for ADB-enabled devices...${NC}"
@@ -166,7 +166,7 @@ scan_subnet() {
     log "Subnet scan on $subnet.0/24 complete."
 }
 
-# === Main Connection Loop ===
+#Main Connection Loop
 main_connection() {
     read -ep "Enter IP address: " ip_address
     if ! validate_ip "$ip_address"; then echo -e "${RED}Invalid IP.${NC}"; return; fi
@@ -211,7 +211,7 @@ main_connection() {
     fi
 }
 
-# === Entry Point ===
+#entry point
 adb_check
 print_banner
 
